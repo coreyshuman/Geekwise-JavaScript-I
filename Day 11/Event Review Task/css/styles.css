@@ -1,0 +1,43 @@
+/* Corey Shuman 12/14/15
+ * Event Review Task
+ * Geekwise
+ */
+ 
+#myListDiv {
+	display: block;
+	background-color: darkblue;
+	width: 310px;
+	min-height: 200px;
+	box-shadow: 8px 8px 4px #886666;
+}
+
+ul {
+	padding: 10px 0;
+}
+
+ul li {
+	list-style-type: none;
+	background-color: lightblue;
+	width: 280px;
+	margin-left: 10px;
+	margin-bottom: 5px;
+	border-radius: 8px;
+	padding: 1px 4px;
+	text-align: center;
+}
+
+#myButton {
+	width: 310px;
+	height: 30px;
+	background-color: lightgreen;
+	border-radius: 8px;
+	box-shadow: 8px 8px 4px #886666;
+}
+
+#myButton:active {
+	width: 310px;
+	height: 30px;
+	border-radius: 8px;
+	box-shadow: 4px 4px 2px #886666;
+	margin: 4px -4px -4px 4px;
+}

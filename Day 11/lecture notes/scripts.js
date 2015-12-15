@@ -6,8 +6,8 @@
  
 document.getElementById("myul").addEventListener("click", function (evt) {
     console.log(this);
-    console.log(evt);
-	//alert(evt.target.textContent);
+    console.log(evt.target);
+	alert(evt.target.textContent);
 });
 
 
@@ -18,6 +18,7 @@ myCup.color = "black";
 myCup.type = "mug";
 myCup.status = "full";
 myCup.content = "coffee";
+myCup.clean = false;
 
 // alternate method using braket notation
 var myCup2 = {};
@@ -39,3 +40,37 @@ myCup.pour = function pour() {
 	}
 	return this.status;
 }
+
+myCup.wash = function() {
+	this.clean = true;
+	this.status = "empty";
+	this.content = "none";
+}
+
+myCup.fill = function(drinkType) {
+	if(drinkType === "") {
+		drinkType = "water";
+	}
+	this.clean = false;
+	this.status =  "full";
+	this.content = drinkType;
+}
+
+
+
+var todoItem = {};
+todoItem.text = "User inputs something here";
+todoItem.finished = false;
+
+
+var arr = [myCup, myCup2, myCup3];
+	arr.forEach(function (item) {
+	item.clean = false;
+	console.log(item);
+});
+
+var str = ["c", "f", "a", "b", "d"];
+str.sort(function (a, b) {
+	return b.charCodeAt(0) - a.charCodeAt(0);
+});
+
