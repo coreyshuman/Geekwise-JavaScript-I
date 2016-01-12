@@ -1,0 +1,13 @@
+body {
+  font-family: monospace;
+}
+
+p {
+  width: 400px;
+}
+
+.title {
+  display: block;
+  width: 100%;
+  border-bottom: 1px dashed black;
+}
