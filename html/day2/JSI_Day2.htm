@@ -1,0 +1,752 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+code
+	{font-family:"Courier New";}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:.5in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:.5in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";}
+span.token
+	{mso-style-name:token;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri Light",sans-serif;
+	font-weight:bold;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link="#0563C1" vlink="#954F72">
+
+<div class=WordSection1>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:24.0pt;line-height:107%'>JavaScript I – Day 2</span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:24.0pt;line-height:107%'>Geekwise Academy</span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:24.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:24.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:24.0pt;line-height:107%'>Instructors:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:24.0pt;line-height:107%'>Corey Shuman</span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:24.0pt;line-height:107%'>Patrick Patterson</span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:24.0pt;line-height:107%'>&nbsp;</span></p>
+
+<span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h1>Today’s Topics</h1>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Review topics from day 1</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Github introduction</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Using JavaScript in a web page</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>User Interaction</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Operators</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Truthy, Falsy</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Intrinsic Objects</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>String Functions</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h1><span style='color:#2E74B5'>Review</span></h1>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Comments and variables</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Data Types</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>String</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>Number</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>Boolean</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>Object</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>Array</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>Null</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>Undefined</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>HTML DOM – Document Object Model</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>The HTML DOM is a standard object model and programming interface
+for html</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>It is structured as a tree of objects</p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>The DOM interface allows us to get, add, modify, and delete HTML
+elements</p>
+
+<p class=MsoNormal style='margin-left:.25in'><img width=486 height=266
+id="Picture 1" src="JSI_Day2_files/image001.png" alt="DOM HTML tree"></p>
+
+<p class=MsoNormal style='margin-left:.25in'>Image from <a
+href="http://www.w3schools.com/js/js_htmldom.asp">w3schools.com</a></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h1><span style='color:#2E74B5'>Using JavaScript in a web page</span></h1>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>3 options:</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>Inline JavaScript</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>Inline Script Tag</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>Script Tag with <code><span style='line-height:107%;font-family:
+"Calibri",sans-serif;color:#C7254E;background:#F9F2F4'>Src</span></code> (this
+imports a separate JS file into your page)</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Inline JavaScript</p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>Create a blank html file with an <code><span style='line-height:
+107%;font-family:"Calibri",sans-serif;color:#C7254E;background:#F9F2F4'>h1</span></code>
+tag using the <code><span style='line-height:107%;font-family:"Calibri",sans-serif;
+color:#C7254E;background:#F9F2F4'>onclick</span></code> attribute like the
+example below</p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:.75in;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;border:solid windowtext 1.0pt;
+  background:#262626;padding:0in 5.4pt 0in 5.4pt'><pre style='line-height:12.0pt;
+  background:#272822;vertical-align:baseline'><span class=token><span
+  style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'>&lt;</span></span><span
+  class=token><span style='font-size:11.0pt;font-family:Consolas;color:greenyellow'>html</span></span><span
+  class=token><span style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'>&gt;</span></span></pre><pre
+  style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
+  style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'>     </span></code><span
+  class=token><span style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'>&lt;</span></span><span
+  class=token><span style='font-size:11.0pt;font-family:Consolas;color:greenyellow'>head</span></span><span
+  class=token><span style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'>&gt;</span></span></pre><pre
+  style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
+  style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'>         </span></code><span
+  class=token><span style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'>&lt;</span></span><span
+  class=token><span style='font-size:11.0pt;font-family:Consolas;color:greenyellow'>title</span></span><span
+  class=token><span style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'>&gt;</span></span><code><span
+  style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'>My page</span></code><span
+  class=token><span style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'>&lt;/</span></span><span
+  class=token><span style='font-size:11.0pt;font-family:Consolas;color:greenyellow'>title</span></span><span
+  class=token><span style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'>&gt;</span></span></pre><pre
+  style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
+  style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'>     </span></code><span
+  class=token><span style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'>&lt;/</span></span><span
+  class=token><span style='font-size:11.0pt;font-family:Consolas;color:greenyellow'>head</span></span><span
+  class=token><span style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'>&gt;</span></span></pre><pre
+  style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
+  style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'>     </span></code><span
+  class=token><span style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'>&lt;</span></span><span
+  class=token><span style='font-size:11.0pt;font-family:Consolas;color:greenyellow'>body</span></span><span
+  class=token><span style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'>&gt;</span></span></pre><pre
+  style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
+  style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'>         </span></code><span
+  class=token><span style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'>&lt;</span></span><span
+  class=token><span style='font-size:11.0pt;font-family:Consolas;color:greenyellow'>h1 </span></span><span
+  class=token><span style='font-size:11.0pt;font-family:Consolas;color:#BDD6EE'>onclick</span></span><span
+  class=token><span style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'>=&quot;</span></span><span
+  class=token><span style='font-size:11.0pt;font-family:Consolas;color:lightcoral'>alert('hello world');</span></span><span
+  class=token><span style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'>&quot;&gt;</span></span><code><span
+  style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'>click me!</span></code><span
+  class=token><span style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'>&lt;/</span></span><span
+  class=token><span style='font-size:11.0pt;font-family:Consolas;color:greenyellow'>h1</span></span><span
+  class=token><span style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'>&gt;</span></span></pre><pre
+  style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
+  style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'>     </span></code><span
+  class=token><span style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'>&lt;/</span></span><span
+  class=token><span style='font-size:11.0pt;font-family:Consolas;color:greenyellow'>body</span></span><span
+  class=token><span style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'>&gt;</span></span></pre><pre
+  style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
+  style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'> </span></code><span
+  class=token><span style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'>&lt;/</span></span><span
+  class=token><span style='font-size:11.0pt;font-family:Consolas;color:greenyellow'>html</span></span><span
+  class=token><span style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'>&gt;</span></span></pre></td>
+ </tr>
+</table>
+
+<p class=MsoListParagraphCxSpFirst>&nbsp;</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>The <code><span style='line-height:107%;font-family:"Calibri",sans-serif;
+color:#C7254E;background:#F9F2F4'>onclick</span></code> attribute can be used
+to attach some functionality to a DOM node. NOTE: This is not the recommended
+way of attaching functionality to your DOM elements, for now at least...</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>This is considered inline since the code that JavaScript will
+execute is inside the node itself. It lives in the page, thus it is considered
+inline.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Inline Script Tag</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>The next way is another type of inline JavaScript, in that it's
+JavaScript that is executed in the context of the html page. IE the code itself
+still lives inside the html page, but in its own script tag.</p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>Remove the <code><span style='line-height:107%;font-family:"Calibri",sans-serif;
+color:#C7254E;background:#F9F2F4'>onclick</span></code> attribute from your <code><span
+style='line-height:107%;font-family:"Calibri",sans-serif;color:#C7254E;
+background:#F9F2F4'>h1</span></code> tag and alter your page markup to match
+the example below.</p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:.75in;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=638 valign=top style='width:6.65in;border:solid windowtext 1.0pt;
+  background:#262626;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  12.0pt;background:#272822;vertical-align:baseline'><span style='font-family:
+  Consolas;color:#F8F8F2'>&lt;</span><span style='font-family:Consolas;
+  color:greenyellow'>html</span><span style='font-family:Consolas;color:#F8F8F2'>&gt;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  12.0pt;background:#272822;vertical-align:baseline'><span style='font-family:
+  Consolas;color:#F8F8F2'>    &lt;</span><span style='font-family:Consolas;
+  color:greenyellow'>head</span><span style='font-family:Consolas;color:#F8F8F2'>&gt;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  12.0pt;background:#272822;vertical-align:baseline'><span style='font-family:
+  Consolas;color:#F8F8F2'>         &lt;</span><span style='font-family:Consolas;
+  color:greenyellow'>title</span><span style='font-family:Consolas;color:#F8F8F2'>&gt;My
+  page&lt;/</span><span style='font-family:Consolas;color:greenyellow'>title</span><span
+  style='font-family:Consolas;color:#F8F8F2'>&gt;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  12.0pt;background:#272822;vertical-align:baseline'><span style='font-family:
+  Consolas;color:#F8F8F2'>    &lt;/</span><span style='font-family:Consolas;
+  color:greenyellow'>head</span><span style='font-family:Consolas;color:#F8F8F2'>&gt;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  12.0pt;background:#272822;vertical-align:baseline'><span style='font-family:
+  Consolas;color:#F8F8F2'>    &lt;</span><span style='font-family:Consolas;
+  color:greenyellow'>body</span><span style='font-family:Consolas;color:#F8F8F2'>&gt;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  12.0pt;background:#272822;vertical-align:baseline'><span style='font-family:
+  Consolas;color:#F8F8F2'>        &lt;</span><span style='font-family:Consolas;
+  color:greenyellow'>h1</span><span style='font-family:Consolas;color:#F8F8F2'>&gt;I'm
+  an h1 tag&lt;/</span><span style='font-family:Consolas;color:greenyellow'>h1</span><span
+  style='font-family:Consolas;color:#F8F8F2'>&gt;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  12.0pt;background:#272822;vertical-align:baseline'><span style='font-family:
+  Consolas;color:#F8F8F2'>        &lt;</span><span style='font-family:Consolas;
+  color:greenyellow'>script </span><span style='font-family:Consolas;
+  color:lightblue'>type</span><span style='font-family:Consolas;color:#F8F8F2'>=&quot;</span><span
+  style='font-family:Consolas;color:lightcoral'>text/javascript</span><span
+  style='font-family:Consolas;color:#F8F8F2'>&quot;&gt;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  12.0pt;background:#272822;vertical-align:baseline'><span style='font-family:
+  Consolas;color:#F8F8F2'>            alert(</span><span style='font-family:
+  Consolas;color:lightcoral'>&quot;I run inline too!&quot;</span><span
+  style='font-family:Consolas;color:#F8F8F2'>);</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  12.0pt;background:#272822;vertical-align:baseline'><span style='font-family:
+  Consolas;color:#F8F8F2'>        &lt;/</span><span style='font-family:Consolas;
+  color:greenyellow'>script</span><span style='font-family:Consolas;color:#F8F8F2'>&gt;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  12.0pt;background:#272822;vertical-align:baseline'><span style='font-family:
+  Consolas;color:#F8F8F2'>    &lt;/</span><span style='font-family:Consolas;
+  color:greenyellow'>body</span><span style='font-family:Consolas;color:#F8F8F2'>&gt;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  12.0pt;background:#272822;vertical-align:baseline'><span style='font-family:
+  Consolas;color:#F8F8F2'>&lt;/</span><span style='font-family:Consolas;
+  color:greenyellow'>html</span><span style='font-family:Consolas;color:#F8F8F2'>&gt;</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:0in'>&nbsp;</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Script Tag With <code><span style='line-height:107%;font-family:
+"Calibri",sans-serif;color:#C7254E;background:#F9F2F4'>Src</span></code></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>One of the last ways of including scripts in your page is similar
+to the previous way, except instead of putting your JavaScript inline you
+specify an external JavaScript file that the browser will include in your page
+and execute.</p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>Create a new JavaScript file in the same folder as your html file
+you've been using for the above examples. Include that file into your html file
+using the method below.</p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:.75in;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=638 valign=top style='width:6.65in;border:solid windowtext 1.0pt;
+  background:#262626;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  12.0pt;background:#272822;vertical-align:baseline'><span style='font-family:
+  Consolas;color:#F8F8F2'>&lt;</span><span style='font-family:Consolas;
+  color:greenyellow'>html</span><span style='font-family:Consolas;color:#F8F8F2'>&gt;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  12.0pt;background:#272822;vertical-align:baseline'><span style='font-family:
+  Consolas;color:#F8F8F2'>    &lt;</span><span style='font-family:Consolas;
+  color:greenyellow'>head</span><span style='font-family:Consolas;color:#F8F8F2'>&gt;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  12.0pt;background:#272822;vertical-align:baseline'><span style='font-family:
+  Consolas;color:#F8F8F2'>        &lt;</span><span style='font-family:Consolas;
+  color:greenyellow'>title</span><span style='font-family:Consolas;color:#F8F8F2'>&gt;My
+  page&lt;/</span><span style='font-family:Consolas;color:greenyellow'>title</span><span
+  style='font-family:Consolas;color:#F8F8F2'>&gt;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  12.0pt;background:#272822;vertical-align:baseline'><span style='font-family:
+  Consolas;color:#F8F8F2'>    &lt;/</span><span style='font-family:Consolas;
+  color:greenyellow'>head</span><span style='font-family:Consolas;color:#F8F8F2'>&gt;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  12.0pt;background:#272822;vertical-align:baseline'><span style='font-family:
+  Consolas;color:#F8F8F2'>    &lt;</span><span style='font-family:Consolas;
+  color:greenyellow'>body</span><span style='font-family:Consolas;color:#F8F8F2'>&gt;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  12.0pt;background:#272822;vertical-align:baseline'><span style='font-family:
+  Consolas;color:#F8F8F2'>        &lt;</span><span style='font-family:Consolas;
+  color:greenyellow'>h1</span><span style='font-family:Consolas;color:#F8F8F2'>&gt;I'm
+  an h1 tag&lt;/</span><span style='font-family:Consolas;color:greenyellow'>h1</span><span
+  style='font-family:Consolas;color:#F8F8F2'>&gt;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  12.0pt;background:#272822;vertical-align:baseline'><span style='font-family:
+  Consolas;color:#F8F8F2'>        &lt;</span><span style='font-family:Consolas;
+  color:greenyellow'>script </span><span style='font-family:Consolas;
+  color:lightblue'>type</span><span style='font-family:Consolas;color:#F8F8F2'>=&quot;</span><span
+  style='font-family:Consolas;color:lightcoral'>text/javascript</span><span
+  style='font-family:Consolas;color:#F8F8F2'>&quot;</span><span
+  style='font-family:Consolas;color:greenyellow'> </span><span
+  style='font-family:Consolas;color:lightblue'>src</span><span
+  style='font-family:Consolas;color:#F8F8F2'>=&quot;</span><span
+  style='font-family:Consolas;color:lightcoral'>myjsfile.js</span><span
+  style='font-family:Consolas;color:#F8F8F2'>&quot;&gt;&lt;/</span><span
+  style='font-family:Consolas;color:greenyellow'>script</span><span
+  style='font-family:Consolas;color:#F8F8F2'>&gt;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  12.0pt;background:#272822;vertical-align:baseline'><span style='font-family:
+  Consolas;color:#F8F8F2'>    &lt;/</span><span style='font-family:Consolas;
+  color:greenyellow'>body</span><span style='font-family:Consolas;color:#F8F8F2'>&gt;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  12.0pt;background:#272822;vertical-align:baseline'><span style='font-family:
+  Consolas;color:#F8F8F2'>&lt;/</span><span style='font-family:Consolas;
+  color:greenyellow'>html</span><span style='font-family:Consolas;color:#F8F8F2'>&gt;</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoListParagraphCxSpFirst>&nbsp;</p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>Insert the following line into your new JS file</p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:.75in;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=638 valign=top style='width:6.65in;border:solid windowtext 1.0pt;
+  background:#262626;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  12.0pt;background:#272822;vertical-align:baseline'><span style='font-family:
+  Consolas;color:#F8F8F2'>alert(</span><span style='font-family:Consolas;
+  color:lightcoral'>&quot;I'm external&quot;</span><span style='font-family:
+  Consolas;color:#F8F8F2'>);</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:.75in'>&nbsp;</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>So when the browser encounters a script tag with a <code><span
+style='line-height:107%;font-family:"Calibri",sans-serif;color:#C7254E;
+background:#F9F2F4'>src</span></code> attribute it will include the file and
+execute it.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>Note: This is usually the best way of including JavaScript on
+your page. There are always exceptions but generally speaking, when you start
+writing your own JavaScript, you'll add your scripts this way.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Execution of a JS file</p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>JavaScript always executes from top to bottom. So if you include
+two JavaScript files...</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;line-height:12.0pt;background:#272822;
+vertical-align:baseline'><span style='font-size:12.0pt;font-family:Consolas;
+color:#F8F8F2'>&lt;</span><span style='font-size:12.0pt;font-family:Consolas;
+color:greenyellow'>script </span><span style='font-size:12.0pt;font-family:
+Consolas;color:lightblue'>type</span><span style='font-size:12.0pt;font-family:
+Consolas;color:#F8F8F2'>=&quot;</span><span style='font-size:12.0pt;font-family:
+Consolas;color:lightcoral'>text/javascript</span><span style='font-size:12.0pt;
+font-family:Consolas;color:#F8F8F2'>&quot;</span><span style='font-size:12.0pt;
+font-family:Consolas;color:greenyellow'> </span><span style='font-size:12.0pt;
+font-family:Consolas;color:lightblue'>src</span><span style='font-size:12.0pt;
+font-family:Consolas;color:#F8F8F2'>=&quot;</span><span style='font-size:12.0pt;
+font-family:Consolas;color:lightcoral'>foo.js</span><span style='font-size:
+12.0pt;font-family:Consolas;color:#F8F8F2'>&quot;&gt;&lt;/</span><span
+style='font-size:12.0pt;font-family:Consolas;color:greenyellow'>script</span><span
+style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;line-height:12.0pt;background:#272822;
+vertical-align:baseline'><span style='font-size:12.0pt;font-family:Consolas;
+color:#F8F8F2'>&lt;</span><span style='font-size:12.0pt;font-family:Consolas;
+color:greenyellow'>script </span><span style='font-size:12.0pt;font-family:
+Consolas;color:lightblue'>type</span><span style='font-size:12.0pt;font-family:
+Consolas;color:#F8F8F2'>=&quot;</span><span style='font-size:12.0pt;font-family:
+Consolas;color:lightcoral'>text/javascript</span><span style='font-size:12.0pt;
+font-family:Consolas;color:#F8F8F2'>&quot;</span><span style='font-size:12.0pt;
+font-family:Consolas;color:greenyellow'> </span><span style='font-size:12.0pt;
+font-family:Consolas;color:lightblue'>src</span><span style='font-size:12.0pt;
+font-family:Consolas;color:#F8F8F2'>=&quot;</span><span style='font-size:12.0pt;
+font-family:Consolas;color:lightcoral'>bar.js</span><span style='font-size:
+12.0pt;font-family:Consolas;color:#F8F8F2'>&quot;&gt;&lt;/</span><span
+style='font-size:12.0pt;font-family:Consolas;color:greenyellow'>script</span><span
+style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>&gt;</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:1.0in'>&nbsp;</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>The browser will first download foo.js, execute it line by line,
+then download bar.js and execute that, etc...</p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>Often, you may want to use something defined in foo.js inside
+bar.js. In order to do this, you must load foo.js first, so it is executed,
+then load bar.js.</p>
+
+<b><span style='font-size:16.0pt;line-height:107%;font-family:"Calibri Light",sans-serif'><br
+clear=all style='page-break-before:always'>
+</span></b>
+
+<h1><span style='color:#2E74B5'>User Interaction</span></h1>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Alert, Confirm, and Prompt functions</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>First, what is a function?</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>We will get much deeper into functions in the following class sessions,
+but for now, understand a function is nothing more than some grouped JavaScript
+behavior that performs a specific set of actions. You <b>call</b> a function.
+It <b>returns</b> a value.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><code><span style='line-height:107%;font-family:"Calibri",sans-serif;
+color:#C7254E;background:#F9F2F4'>alert()</span></code> and <code><span
+style='line-height:107%;font-family:"Calibri",sans-serif;color:#C7254E;
+background:#F9F2F4'>confirm()</span></code> and <code><span style='line-height:
+107%;font-family:"Calibri",sans-serif;color:#C7254E;background:#F9F2F4'>prompt()</span></code>
+can each be used to convey or solicit information from a user</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><code><span style='line-height:107%;font-family:"Calibri",sans-serif;
+color:#C7254E;background:#F9F2F4'>alert()</span></code> presents a message to
+the user</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><code><span style='line-height:107%;font-family:"Calibri",sans-serif;
+color:#C7254E;background:#F9F2F4'>confirm()</span></code> will return a true or
+false Boolean depending on the button the user clicked</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><code><span style='line-height:107%;font-family:"Calibri",sans-serif;
+color:#C7254E;background:#F9F2F4'>prompt()</span></code> will allow you to ask
+the user for input, and then use it in your script</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>All three functions halt the execution of JavaScript until some
+action by the user takes place</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Examples:</p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:.25in;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=638 valign=top style='width:6.65in;border:solid windowtext 1.0pt;
+  background:#262626;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNoSpacing><span style='font-family:Consolas;color:#AEAAAA'>//tell
+  the user something</span></p>
+  <p class=MsoNoSpacing><span style='font-family:Consolas;color:#F8F8F2'>alert(</span><span
+  style='font-family:Consolas;color:lightcoral'>&quot;Hello, I'm an alert. I'll
+  just wait here until you close me.&quot;</span><span style='font-family:Consolas;
+  color:#F8F8F2'>);</span></p>
+  <p class=MsoNoSpacing><span style='font-family:Consolas'>&nbsp;</span></p>
+  <p class=MsoNoSpacing><span style='font-family:Consolas;color:#AEAAAA'>//confirm
+  a user’s action</span></p>
+  <p class=MsoNoSpacing><span style='font-family:Consolas;color:#8EAADB'>var</span><span
+  style='font-family:Consolas;color:#F8F8F2'> userChoice = confirm(</span><span
+  style='font-family:Consolas;color:lightcoral'>&quot;Are you sure you want to
+  do that?&quot;</span><span style='font-family:Consolas;color:#F8F8F2'>);</span></p>
+  <p class=MsoNoSpacing><span style='font-family:Consolas'>&nbsp;</span></p>
+  <p class=MsoNoSpacing><span style='font-family:Consolas;color:#AEAAAA'>//ask
+  the user for input</span></p>
+  <p class=MsoNoSpacing><span style='font-family:Consolas;color:#8EAADB'>var</span><span
+  style='font-family:Consolas;color:#F8F8F2'> username = prompt(</span><span
+  style='font-family:Consolas;color:lightcoral'>&quot;What is your name?&quot;</span><span
+  style='font-family:Consolas;color:#F8F8F2'>);</span></p>
+  <p class=MsoListParagraph style='margin-left:0in'>&nbsp;</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:0in'>&nbsp;</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:0in'><b><span
+style='font-size:16.0pt;line-height:107%;font-family:"Calibri Light",sans-serif;
+color:#2E74B5'>Assignment</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:0in'>Create a new script
+called app.js and program it to do the following:</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Ask for your first name</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Ask for your last name</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Log your first name to the console</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Alert your last name</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Confirm (anything) and alert the result of the confirm</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:0in'>Include your app.js
+file in a blank empty html page</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:0in'>Execute your script</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:0in'>Make sure that your
+script functions the way it's expected too</p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:0in'>&nbsp;</p>
+
+<h1> </h1>
+
+<p class=MsoListParagraph>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

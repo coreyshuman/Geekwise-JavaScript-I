@@ -1,0 +1,55 @@
+html, body, #container {
+	height: 100%;
+}
+
+body > #container {
+	height: auto; min-height: 100%;
+}
+
+#content {
+	width: 50%;
+	margin-left: 23%;
+	min-width: 600px;
+	max-width: 900px;
+	border: solid 3px black;
+	border-radius: 10px;
+	box-shadow: 5px 5px 3px #888888;
+	padding: 0 1em;
+	padding-bottom: 3em;
+}
+
+h1,h2,h3 {
+	color: rgb(122,22,1);
+}
+
+a, a:visited {
+	color: rgb(122,22,1);
+}
+
+a:hover {
+	color: rgb(188,88,88);
+}
+
+.center {
+	text-align: center;
+}
+
+.blankList {
+	list-style-type: none;
+}
+
+.largeList {
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+#footer {
+	clear: both;
+    position: relative;
+    z-index: 10;
+    height: 3em;
+    margin-top: -3em;
+	text-align: center;
+	border-top: solid 1px black;
+	width: 100%;
+}
