@@ -22,7 +22,7 @@ function addItem1ToList()
 function printListToTextOutput()
 {
 	// this option is fine
-	//domTextOutput(todoArray.toString());
+	// domTextOutput(todoArray.toString());
 	// this adds a space after commas for cleaner output
 	domTextOutput(todoArray.join(", "));
 }
@@ -30,9 +30,11 @@ function printListToTextOutput()
 function addItem2ToBeginningOfList()
 {
 	// Option 1: use unshift() function
+	
 	if(domInput2() != "") {
 		todoArray.unshift(domInput2());
 	}
+	
 	
 	// Option 2: use concat() function and temporary array
 	/*
