@@ -1,0 +1,29 @@
+/* JavaScript Test Code Template
+   Corey Shuman
+   11/4/15
+   
+   filename: style.css
+   This file contains styling for our test app.   
+*/
+
+body {
+	background-color: lightgray;
+	font-size: 2em;
+}
+
+input {
+	font-size: 1em;
+}
+
+#goBtnId {
+	color: green;
+}
+
+#textOutputId {
+	width: 480px;
+	min-height: 300px;
+	margin-top: 20px;
+	padding: 10px;
+	color: blue;
+	border: 1px solid black;
+}

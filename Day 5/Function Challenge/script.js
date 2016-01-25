@@ -41,7 +41,8 @@ function averageOf4Numbers(numbers) {
         return NaN;
     }
 	
-	if(typeof numbers[0] !== "number" || typeof numbers[1] !== "number" || typeof numbers[2] !== "number" || typeof numbers[3] !== "number") {
+	if(typeof numbers[0] !== "number" || typeof numbers[1] !== "number" 
+		|| typeof numbers[2] !== "number" || typeof numbers[3] !== "number") {
 		return NaN;
 	}
 	

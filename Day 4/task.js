@@ -1,17 +1,18 @@
-var n1 = prompt("Give me your first number.")
-var n2 = prompt( "Give me your second number.")
+// Task Day 4
+// Add and divide numbers from user
+// Corey Shuman
 
-var na1 = parseInt(n1);
-var nb2 = parseInt(n2);
+var a1 = prompt("What is your first number?");
+var a2 = prompt("What is your second number?");
 
-if( isNaN(na1) || isNaN(nb2) )
-{
-	alert("Input not valid!");
-}
-else
-{
-	var answermulti = (na1 * nb2);
-	alert("The two numbers multiplied by eachother is  " + answermulti);
-	var answerdivide = (na1 / nb2);
-	alert("The two numbers divided are " + answerdivide);
+var n1 = parseInt(a1);
+var n2 = parseInt(a2);
+
+if (isNaN(n1) || isNaN(n2) ) {
+	alert("Invalid input.")
+} else {
+	var multiply = n1 * n2;
+	var divide = n1 / n2;
+	alert(a1 + " * " + a2 + " = " + multiply);
+	alert(a1 + " / " + a2 + " = " + divide);
 }

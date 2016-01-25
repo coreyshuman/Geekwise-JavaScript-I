@@ -21,9 +21,6 @@
 @font-face
 	{font-family:Consolas;
 	panose-1:2 11 6 9 2 2 4 3 2 4;}
-@font-face
-	{font-family:inherit;
-	panose-1:0 0 0 0 0 0 0 0 0 0;}
  /* Style Definitions */
  p.MsoNormal, li.MsoNormal, div.MsoNormal
 	{margin-top:0in;
@@ -124,6 +121,8 @@ span.Heading3Char
 	mso-style-link:"Heading 3";
 	font-family:"Calibri Light",sans-serif;
 	font-weight:bold;}
+span.mention
+	{mso-style-name:mention;}
 .MsoChpDefault
 	{font-family:"Calibri",sans-serif;}
 @page WordSection1
@@ -229,19 +228,27 @@ style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&n
 
 <p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
 style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-</span></span>Truthy, Falsy</p>
+</span></span>Intrinsic Objects</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.5in;text-indent:-.25in'><span
+style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>String Functions</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.5in;text-indent:-.25in'><span
+style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>Number Functions</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.5in;text-indent:-.25in'><span
+style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>Date Functions</p>
 
 <p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
 style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-</span></span>Intrinsic Objects and String Functions</p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
-style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-</span></span>Let’s take a look at functions</p>
+</span></span>Function Basics</p>
 
 <p class=MsoListParagraphCxSpLast style='margin-left:1.0in;text-indent:-.25in'><span
 style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-</span></span>Arrays in-depth</p>
+</span></span>Truthy, Falsy</p>
 
 <p class=MsoNormal>&nbsp;</p>
 
@@ -271,42 +278,16 @@ clear=all style='page-break-before:always'>
 clear=all style='page-break-before:always'>
 </span></b>
 
-<h1><span style='color:#2F5496'>Truthy / Falsy</span></h1>
+<h1><span style='color:#2F5496'>Text Adventure Game Tutorial</span></h1>
 
-<p class=MsoListParagraphCxSpFirst>Certain values in JavaScript, when evaluated,
-are considered &quot;falsy&quot; or &quot;truthy&quot;</p>
+<p class=MsoNormal>&nbsp;</p>
 
-<p class=MsoListParagraphCxSpMiddle>The following values are always falsy:</p>
+<p class=MsoNormal>See code on Github under Day 4:</p>
 
-<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>false</p>
+<p class=MsoNormal><a
+href="https://github.com/coreyshuman/Geekwise-JavaScript-I/tree/master/Day%204">https://github.com/coreyshuman/Geekwise-JavaScript-I/tree/master/Day%204</a></p>
 
-<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>0 (literal number zero)</p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>&quot;&quot; empty string</p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>null</p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>undefined</p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>NaN (Not a number)</p>
-
-<p class=MsoListParagraphCxSpMiddle>All other values are truthy, including
-&quot;0&quot; (zero in quotes), &quot;false&quot; (false in quotes), empty
-functions, empty arrays, and empty objects.</p>
-
-<p class=MsoListParagraphCxSpLast>&nbsp;</p>
+<p class=MsoNormal>&nbsp;</p>
 
 <b><span style='font-size:16.0pt;line-height:107%;font-family:"Calibri Light",sans-serif'><br
 clear=all style='page-break-before:always'>
@@ -669,732 +650,40 @@ that functions can also call other functions.</p>
 <h1><span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
 font-weight:normal'>&nbsp;</span></h1>
 
-<b><span style='font-size:16.0pt;line-height:107%;font-family:"Calibri Light",sans-serif'><br
-clear=all style='page-break-before:always'>
-</span></b>
+<h1><span style='color:#2F5496'>Truthy / Falsy</span></h1>
 
-<h1><span style='color:#2F5496'>Arrays In-Depth</span></h1>
+<p class=MsoListParagraphCxSpFirst>Certain values in JavaScript, when
+evaluated, are considered &quot;falsy&quot; or &quot;truthy&quot;</p>
 
-<p class=MsoNormal>&nbsp;</p>
+<p class=MsoListParagraphCxSpMiddle>The following values are always falsy:</p>
 
-<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal;background:white;vertical-align:baseline'>Arrays are very useful for
-keeping an<span class=apple-converted-space>&nbsp;</span><strong><span
-style='font-family:"Calibri",sans-serif'>ordered list</span></strong><span
-class=apple-converted-space>&nbsp;</span>of &quot;things&quot;.</p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>false</p>
 
-<p class=MsoNormal style='background:white;vertical-align:baseline'>Arrays
-don't really care what you put into them, they accept all the data types we've
-talked about to date, including a few we haven't.</p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>0 (literal number zero)</p>
 
-<p class=MsoNormal style='background:white;vertical-align:baseline'>You create
-a new array using the<span class=apple-converted-space>&nbsp;</span><code><span
-style='line-height:107%;font-family:"Calibri",sans-serif;color:#FF5050;
-background:#F9F2F4'>[...]</span></code><span class=apple-converted-space>&nbsp;</span>syntax</p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>&quot;&quot; empty string</p>
 
-<p class=MsoNormal style='background:white;vertical-align:baseline'>Items in an
-array are separated with a<span class=apple-converted-space>&nbsp;</span><code><span
-style='line-height:107%;font-family:"Calibri",sans-serif;color:#FF5050;
-background:#F9F2F4'>,</span></code><span class=apple-converted-space>&nbsp;</span>(comma)</p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>null</p>
 
-<p class=MsoNormal style='background:white;vertical-align:baseline'>Let’s try
-creating an array to hold a list of your favorite fruits.</p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>undefined</p>
 
-<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
-background:white'>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>NaN (Not a number)</p>
 
-<p class=MsoNormal style='background:white;vertical-align:baseline;border:none;
-padding:0in'>Try it: in your console create a new array and store the value in
-a variable. Then log the variable.</p>
-
-</div>
-
-<pre style='background:#272822;vertical-align:baseline'><span style='font-size:
-13.5pt;font-family:Consolas;color:#F8F8F2'>    </span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:slategray'>//lets create an array</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#66D9EF'>var</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> fruits </span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>=</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> </span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>[</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#A6E22E'>&quot;apple&quot;</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>,</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> </span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#A6E22E'>&quot;banana&quot;</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>,</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> </span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#A6E22E'>&quot;cherry&quot;</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>,</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> </span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#A6E22E'>&quot;strawberry&quot;</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>];</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>&nbsp;</span></code></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>console</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>.log(</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>fruits</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>);</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
-style='font-family:Consolas;color:#F8F8F2'>    </span></code></pre>
-
-<p class=MsoNormal style='background:white;vertical-align:baseline'>Arrays have
-built in ways of determining how many items they are holding, the<span
-class=apple-converted-space>&nbsp;</span><code><span style='line-height:107%;
-font-family:"Calibri",sans-serif;color:#FF5050;background:#F9F2F4'>length</span></code><span
-class=apple-converted-space>&nbsp;</span>property.</p>
-
-<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
-background:white'>
-
-<p class=MsoNormal style='background:white;vertical-align:baseline;border:none;
-padding:0in'>Try it: log to the console the length of the fruits array you
-created previously.</p>
-
-</div>
-
-<pre style='background:#272822;vertical-align:baseline'><span style='font-size:
-13.5pt;font-family:Consolas;color:#F8F8F2'>    </span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:slategray'>//how many items are in the array?</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>console</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>.log(</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>fruits</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>.</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>length</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>);</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
-style='font-family:Consolas;color:#F8F8F2'>    </span></code></pre>
-
-<p class=MsoNormal style='background:white;vertical-align:baseline'><span
-style='color:#3E3F47'>Ok, so we've got some data in our arrays, and we know how
-many items are in the array, now how do we get it back out?</span></p>
-
-<h3 style='margin-top:37.5pt;margin-right:0in;margin-bottom:22.5pt;margin-left:
-0in;background:white;vertical-align:baseline'><span style='font-size:11.0pt;
-line-height:107%;font-family:"Calibri",sans-serif;color:#3B3838'>Accessing
-Array Contents</span></h3>
-
-<p class=MsoNormal style='background:white;vertical-align:baseline'>Arrays are
-index based, so you can use a numbered index to retrieve a specific value,
-using the brackets to define which index you want.</p>
-
-<pre style='background:#272822;vertical-align:baseline'><span style='font-size:
-13.5pt;font-family:Consolas;color:#F8F8F2'>    </span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><span
-class=token><span style='font-size:11.0pt;font-family:Consolas;color:#66D9EF'>var</span></span><code><span
-style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'> a </span></code><span
-class=token><span style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'>=</span></span><code><span
-style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'> </span></code><span
-class=token><span style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'>[</span></span><span
-class=token><span style='font-size:11.0pt;font-family:Consolas;color:#AE81FF'>1</span></span><span
-class=token><span style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'>,</span></span><code><span
-style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'> </span></code><span
-class=token><span style='font-size:11.0pt;font-family:Consolas;color:#AE81FF'>2</span></span><span
-class=token><span style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'>,</span></span><code><span
-style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'> </span></code><span
-class=token><span style='font-size:11.0pt;font-family:Consolas;color:#AE81FF'>3</span></span><span
-class=token><span style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'>];</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
-style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'>&nbsp;</span></code></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
-style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'>console</span></code><span
-class=token><span style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'>.log(</span></span><code><span
-style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'>a</span></code><span
-class=token><span style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'>[</span></span><code><span
-style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'>N</span></code><span
-class=token><span style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'>]);</span></span><span
-class=token><span style='font-size:11.0pt;font-family:Consolas;color:slategray'> //where N would be a numbered index you want to retrieve</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><span
-class=token><span style='font-size:11.0pt;font-family:Consolas;color:slategray'>&nbsp;</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><span
-class=token><span style='font-size:11.0pt;font-family:Consolas;color:slategray'>//this works too</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
-style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'>console</span></code><span
-class=token><span style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'>.log([</span></span><span
-class=token><span style='font-size:11.0pt;font-family:Consolas;color:#AE81FF'>1</span></span><span
-class=token><span style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'>,</span></span><code><span
-style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'> </span></code><span
-class=token><span style='font-size:11.0pt;font-family:Consolas;color:#AE81FF'>2</span></span><span
-class=token><span style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'>,</span></span><code><span
-style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'> </span></code><span
-class=token><span style='font-size:11.0pt;font-family:Consolas;color:#AE81FF'>3</span></span><span
-class=token><span style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'>,</span></span><code><span
-style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'> </span></code><span
-class=token><span style='font-size:11.0pt;font-family:Consolas;color:#AE81FF'>4</span></span><span
-class=token><span style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'>][</span></span><code><span
-style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'>N</span></code><span
-class=token><span style='font-size:11.0pt;font-family:Consolas;color:#F8F8F2'>]);</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
-style='font-family:Consolas;color:#F8F8F2'>    </span></code></pre>
-
-<p class=MsoNormal style='background:white;vertical-align:baseline'>&nbsp;</p>
-
-<p class=MsoNormal style='background:white;vertical-align:baseline'>You might
-have noticed something odd using the example above. Try this:</p>
-
-<pre style='background:#272822;vertical-align:baseline'><span style='font-size:
-13.5pt;font-family:Consolas;color:#F8F8F2'>    </span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#66D9EF'>var</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> a </span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>=</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> </span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>[</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#AE81FF'>1</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>,</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> </span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#AE81FF'>2</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>,</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> </span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#AE81FF'>3</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>];</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#66D9EF'>var</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> index </span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>=</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> </span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#AE81FF'>2</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>;</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>&nbsp;</span></code></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>console</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>.log(</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>a</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>[</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>index</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>]);</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:slategray'> //what does this yield?</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
-style='font-family:Consolas;color:#F8F8F2'>    </span></code></pre>
-
-<p class=MsoNormal style='background:white;vertical-align:baseline'>Array
-indexes (as well as other indexes we'll discuss later) all start with 0. So in
-the example above, index zero would have the value 1, index 1 has the value 2,
-index 2 has the value 3, etc...</p>
-
-<pre style='background:#272822;vertical-align:baseline'><span style='font-size:
-13.5pt;font-family:Consolas;color:#F8F8F2'>    </span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#66D9EF'>var</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> firstFruit </span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>=</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> fruits</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>[</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#AE81FF'>0</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>];</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>console</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>.log(</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>firstFruit</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>);</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:slategray'> //log the first value in the array</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>&nbsp;</span></code></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#66D9EF'>var</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> secondFruits </span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>=</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> fruits</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>[</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#AE81FF'>1</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>];</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>console</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>.log(</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>secondFruits</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>);</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:slategray'>&nbsp;</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:slategray'>//etc...</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>&nbsp;</span></code></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>console</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>.log(</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>fruits</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>[</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#AE81FF'>4</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>]);</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:slategray'> //what does a unknown index return?</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
-style='font-family:Consolas;color:#F8F8F2'>    </span></code></pre>
-
-<h3 style='margin-top:37.5pt;margin-right:0in;margin-bottom:22.5pt;margin-left:
-0in;background:white;vertical-align:baseline'><span style='font-size:11.0pt;
-line-height:107%;font-family:"Calibri",sans-serif;color:#3B3838'>Adding items
-to an array</span></h3>
-
-<p class=MsoNormal style='background:white;vertical-align:baseline'>Awesome, I
-can get my data back out of an array once I put it in, how do I add more things
-to it?</p>
-
-<p class=MsoNormal style='background:white;vertical-align:baseline'>JavaScript
-Array's provide a function called<span class=apple-converted-space>&nbsp;</span><code><span
-style='line-height:107%;font-family:"Calibri",sans-serif;color:#FF5050;
-background:#F9F2F4'>push</span></code><span class=apple-converted-space>&nbsp;</span>that
-allows for adding items to the<span class=apple-converted-space>&nbsp;</span><strong><span
-style='font-family:"Calibri",sans-serif'>end</span></strong><span
-class=apple-converted-space>&nbsp;</span>of an array.</p>
-
-<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
-background:white'>
-
-<p class=MsoNormal style='background:white;vertical-align:baseline;border:none;
-padding:0in'>Try it: Add a new fruit to the end of your fruits array using the<span
-class=apple-converted-space>&nbsp;</span><code><span style='line-height:107%;
-font-family:"Calibri",sans-serif;color:#FF5050;background:#F9F2F4'>fruits.push(...)</span></code><code><span
-style='line-height:107%;font-family:"Calibri",sans-serif;background:#F9F2F4'> </span></code>function.</p>
-
-</div>
-
-<pre style='background:#272822;vertical-align:baseline'><span style='font-size:
-13.5pt;font-family:Consolas;color:#F8F8F2'>    </span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:slategray'>//add an item to the end of an array</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>fruits</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>.push(</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#A6E22E'>&quot;blackberry&quot;</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>);</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
-style='font-family:Consolas;color:#F8F8F2'>    </span></code></pre>
-
-<p class=MsoNormal style='background:white;vertical-align:baseline'>When you
-add items to your array, the<span class=apple-converted-space>&nbsp;</span><code><span
-style='line-height:107%;font-family:"Calibri",sans-serif;color:#FF5050;
-background:#F9F2F4'>length</span></code><span class=apple-converted-space>&nbsp;</span>property
-is automatically updated for you.</p>
-
-<pre style='background:#272822;vertical-align:baseline'><span style='font-size:
-13.5pt;font-family:Consolas;color:#F8F8F2'>    </span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#66D9EF'>var</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> a </span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>=</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> </span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>[</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#AE81FF'>1</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>];</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>console</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>.log(</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>a</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>.</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>length</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>);</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>&nbsp;</span></code></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>a</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>.push(</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#AE81FF'>2</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>);</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>console</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>.log(</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>a</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>.</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>length</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>);</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
-style='font-family:Consolas;color:#F8F8F2'>    </span></code></pre>
-
-<p class=MsoNormal style='background:white;vertical-align:baseline'>&nbsp;</p>
-
-<p class=MsoNormal style='background:white;vertical-align:baseline'>&nbsp;</p>
-
-<p class=MsoNormal style='background:white;vertical-align:baseline'>&nbsp;</p>
-
-<p class=MsoNormal style='background:white;vertical-align:baseline'>Arrays can
-also contain other arrays.</p>
-
-<pre style='background:#272822;vertical-align:baseline'><span style='font-size:
-13.5pt;font-family:Consolas;color:#F8F8F2'> </span></pre><pre style='line-height:
-12.0pt;background:#272822;vertical-align:baseline'><span class=token><span
-style='font-size:12.0pt;font-family:Consolas;color:slategray'>//create an array to hold multiple arrays</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#66D9EF'>var</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> fruitColors </span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>=</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> </span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>[];</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#66D9EF'>var</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> cherry </span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>=</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> </span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>[</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#A6E22E'>&quot;cherry&quot;</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>,</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> </span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#A6E22E'>&quot;red&quot;</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>];</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#66D9EF'>var</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> banana </span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>=</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> </span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>[</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#A6E22E'>&quot;banana&quot;</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>,</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> </span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#A6E22E'>&quot;yellow&quot;</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>];</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#66D9EF'>var</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> apple </span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>=</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> </span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>[</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#A6E22E'>&quot;apple&quot;</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>,</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> </span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#A6E22E'>&quot;green&quot;</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>];</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:slategray'>&nbsp;</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:slategray'>//add all the fruit vars into the fruitColors array</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>fruitColors</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>.push(</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>cherry</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>);</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>fruitColors</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>.push(</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>banana</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>);</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>fruitColors</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>.push(</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>apple</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>);</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>&nbsp;</span></code></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>console</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>.log(</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>fruitColors</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>);</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
-style='font-family:Consolas;color:#F8F8F2'>    </span></code></pre>
-
-<p class=MsoNormal style='background:white;vertical-align:baseline'>Now let’s
-attempt to pull out the colors only for each of the three fruits in our<span
-class=apple-converted-space>&nbsp;</span><code><span style='line-height:107%;
-font-family:"Calibri",sans-serif;color:#FF5050;background:#F9F2F4'>fruitColors</span></code><span
-class=apple-converted-space>&nbsp;</span>array.</p>
-
-<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
-background:white'>
-
-<p class=MsoNormal style='background:white;vertical-align:baseline;border:none;
-padding:0in'>Try it: create a snippet that will create an array to hold
-multiple arrays (defined above). Then write three console logs that log<span
-class=apple-converted-space>&nbsp;</span><strong><span style='font-family:"Calibri",sans-serif'>only</span></strong><span
-class=apple-converted-space>&nbsp;</span>the colors of the fruits.</p>
-
-</div>
-
-<pre style='background:#272822;vertical-align:baseline'><span style='font-size:
-13.5pt;font-family:Consolas;color:#F8F8F2'>    </span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:slategray'>//we can access our array's based on index</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>console</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>.log(</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>fruitColors</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>[</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#AE81FF'>0</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>][</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#AE81FF'>1</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>]);</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>console</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>.log(</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>fruitColors</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>[</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#AE81FF'>1</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>][</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#AE81FF'>1</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>]);</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>console</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>.log(</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>fruitColors</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>[</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#AE81FF'>2</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>][</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#AE81FF'>1</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>]);</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
-style='font-family:Consolas;color:#F8F8F2'>    </span></code></pre>
-
-<h3 style='margin-top:37.5pt;margin-right:0in;margin-bottom:22.5pt;margin-left:
-0in;background:white;vertical-align:baseline'><span style='font-size:11.0pt;
-line-height:107%;font-family:"Calibri",sans-serif;color:#3B3838'>Removing items
-from an array</span></h3>
-
-<p class=MsoNormal style='background:white;vertical-align:baseline'>So now we
-can create Arrays, access array properties, and add items to arrays, how about
-removing items?</p>
-
-<p class=MsoNormal style='background:white;vertical-align:baseline'>Items can
-be removed one at a time<span class=apple-converted-space>&nbsp;</span><strong><span
-style='font-family:"Calibri",sans-serif'>from the end</span></strong><span
-class=apple-converted-space>&nbsp;</span>of the array, using the<span
-class=apple-converted-space>&nbsp;</span><code><span style='line-height:107%;
-font-family:"Calibri",sans-serif;color:#FF5050;background:#F9F2F4'>pop</span></code><span
-class=apple-converted-space>&nbsp;</span>function. NOTE: This modifies the
-original array</p>
-
-<pre style='background:#272822;vertical-align:baseline'><span style='font-size:
-13.5pt;font-family:Consolas;color:#F8F8F2'>    </span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#66D9EF'>var</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> lastFruit </span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>=</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> fruits</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>.pop();</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>console</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>.log(</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>lastFruit</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>);</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>console</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>.log(</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>fruits</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>);</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
-style='font-family:Consolas;color:#F8F8F2'>    </span></code></pre>
-
-<p class=MsoNormal style='background:white;vertical-align:baseline'>Another
-handy array function we'll talk about is the<span class=apple-converted-space>&nbsp;</span><code><span
-style='line-height:107%;font-family:"Calibri",sans-serif;background:#F9F2F4'>slice</span></code><span
-class=apple-converted-space>&nbsp;</span>function. It works on arrays a little
-differently.</p>
-
-<p class=MsoNormal style='background:white;vertical-align:baseline'>The<span
-class=apple-converted-space>&nbsp;</span><code><span style='line-height:107%;
-font-family:"Calibri",sans-serif;color:#FF5050;background:#F9F2F4'>slice</span></code><span
-class=apple-converted-space>&nbsp;</span>function will make a copy of the
-specified indexes and return them in a new array.</p>
-
-<p class=MsoNormal style='background:white;vertical-align:baseline'>The<span
-class=apple-converted-space>&nbsp;</span><strong><span style='font-family:"Calibri",sans-serif'>signature</span></strong><span
-class=apple-converted-space>&nbsp;</span>of the slice function looks like:  </p>
-
-<p class=MsoNormal style='background:#3B3838;vertical-align:baseline'><code><span
-style='font-size:12.0pt;line-height:107%;font-family:Consolas;color:#F8F8F2;
-background:#272822'>fruits</span></code><span class=token><span
-style='font-size:12.0pt;line-height:107%;font-family:Consolas;color:#F8F8F2;
-background:#272822'>.slice(</span></span><code><span style='font-size:12.0pt;
-line-height:107%;font-family:Consolas;color:#F8F8F2;background:#272822'>begin</span></code><span
-class=token><span style='font-size:12.0pt;line-height:107%;font-family:Consolas;
-color:#F8F8F2;background:#272822'>,</span></span><code><span style='font-size:
-12.0pt;line-height:107%;font-family:Consolas;color:#F8F8F2;background:#272822'>
-</span></code><span class=token><span style='font-size:12.0pt;line-height:107%;
-font-family:Consolas;color:#F8F8F2;background:#272822'>[</span></span><code><span
-style='font-size:12.0pt;line-height:107%;font-family:Consolas;color:#F8F8F2;
-background:#272822'>end</span></code><span class=token><span style='font-size:
-12.0pt;line-height:107%;font-family:Consolas;color:#F8F8F2;background:#272822'>])</span></span></p>
-
-<p class=MsoNormal style='background:white;vertical-align:baseline'>&nbsp;</p>
-
-<p class=MsoNormal style='background:white;vertical-align:baseline'>The<span
-class=apple-converted-space>&nbsp;</span><code><span style='line-height:107%;
-font-family:"Calibri",sans-serif;color:#FF5050;background:#F9F2F4'>begin</span></code><span
-class=apple-converted-space>&nbsp;</span>is the zero based starting index, and
-the<span class=apple-converted-space>&nbsp;</span><code><span style='line-height:
-107%;font-family:"Calibri",sans-serif;color:#FF5050;background:#F9F2F4'>end</span></code><span
-class=apple-converted-space>&nbsp;</span>is the index to stop at. NOTE: The
-extraction does not include the end index!</p>
-
-<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
-background:white'>
-
-<p class=MsoNormal style='background:white;vertical-align:baseline;border:none;
-padding:0in'>Try it: Create an array with 4 strings, then slice the middle two.</p>
-
-</div>
-
-<pre style='background:#272822;vertical-align:baseline'><span style='font-size:
-13.5pt;font-family:Consolas;color:#F8F8F2'>    </span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#66D9EF'>var</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> fruits </span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>=</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> </span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>[</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#A6E22E'>&quot;apple&quot;</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>,</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> </span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#A6E22E'>&quot;cherry&quot;</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>,</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> </span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#A6E22E'>&quot;plum&quot;</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>,</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> </span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#A6E22E'>&quot;apricot&quot;</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>];</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>console</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>.log(</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>fruits</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>.slice(</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#AE81FF'>1</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>,</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> </span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#AE81FF'>3</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>));</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>console</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>.log(</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>fruits</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>);</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:slategray'> //note, it's the same as the original array.</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
-style='font-family:Consolas;color:#F8F8F2'>    </span></code></pre>
-
-<p class=MsoNormal style='background:white;vertical-align:baseline'>One point
-to remember about the<span class=apple-converted-space>&nbsp;</span><code><span
-style='line-height:107%;font-family:"Calibri",sans-serif;color:#FF5050;
-background:#F9F2F4'>slice</span></code><span class=apple-converted-space>&nbsp;</span>functions
-is that is<span class=apple-converted-space>&nbsp;</span><strong><span
-style='font-family:"Calibri",sans-serif'>does not</span></strong><span
-class=apple-converted-space>&nbsp;</span>modify the original array. But what if
-we actually did want to modify the original?</p>
-
-<p class=MsoNormal style='background:white;vertical-align:baseline'><code><span
-style='line-height:107%;font-family:"Calibri",sans-serif;color:#FF5050;
-background:#F9F2F4'>splice</span></code><span class=apple-converted-space>&nbsp;</span>to
-the rescue! The splice function works in a similar way to the slice function,
-however it allows you to modify the original array.</p>
-
-<p class=MsoNormal style='background:white;vertical-align:baseline'>The<span
-class=apple-converted-space>&nbsp;</span><strong><span style='font-family:"Calibri",sans-serif'>signature</span></strong><span
-class=apple-converted-space>&nbsp;</span>of the splice function looks like:</p>
-
-<pre style='background:#272822;vertical-align:baseline'><span style='font-size:
-13.5pt;font-family:Consolas;color:#F8F8F2'>    </span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>fruits</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>.splice(</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>begin</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>,</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> howManyToRemove</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>,</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> </span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>[</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>additional</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>,</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> items</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>,</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> to</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>,</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> add</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>]);</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
-style='font-family:Consolas;color:#F8F8F2'>    </span></code></pre>
-
-<p class=MsoNormal style='background:white;vertical-align:baseline'>So<span
-class=apple-converted-space>&nbsp;</span><code><span style='line-height:107%;
-font-family:"Calibri",sans-serif;color:#FF5050;background:#F9F2F4'>begin</span></code><span
-class=apple-converted-space>&nbsp;</span>is our starting index,<span
-class=apple-converted-space>&nbsp;</span><code><span style='line-height:107%;
-font-family:"Calibri",sans-serif;color:#FF5050;background:#F9F2F4'>howManyToRemove</span></code><span
-class=apple-converted-space>&nbsp;</span>is how many items to remove from the
-starting index, and additional items to add are more elements that you want to
-add to the array (comma separated values).</p>
-
-<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
-background:white'>
-
-<p class=MsoNormal style='background:white;vertical-align:baseline;border:none;
-padding:0in'>Try it: Create an array with 4 elements in it. Then remove the
-third element. Log the array to the console.</p>
-
-</div>
-
-<pre style='background:#272822;vertical-align:baseline'><span style='font-size:
-13.5pt;font-family:Consolas;color:#F8F8F2'>    </span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#66D9EF'>var</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> fruits </span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>=</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> </span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>[</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#A6E22E'>&quot;cherry&quot;</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>,</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> </span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#A6E22E'>&quot;apple&quot;</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>,</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> </span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#A6E22E'>&quot;banana&quot;</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>,</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> </span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#A6E22E'>&quot;plum&quot;</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>];</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>fruits</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>.splice(</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#AE81FF'>2</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>,</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> </span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#AE81FF'>1</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>);</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>console</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>.log(</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>fruits</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>);</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>    </span></code></pre>
-
-<p class=MsoNormal style='background:white;vertical-align:baseline'>Using the
-same array, remove the second element and add a new second element.</p>
-
-<pre style='background:#272822;vertical-align:baseline'><span style='font-size:
-13.5pt;font-family:Consolas;color:#F8F8F2'>    </span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>fruits</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>.splice(</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#AE81FF'>1</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>,</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> </span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#AE81FF'>1</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>,</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> </span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#A6E22E'>&quot;orange&quot;</span></span><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>);</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>console</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>.log(</span></span><code><span
-style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>fruits</span></code><span
-class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>);</span></span></pre><pre
-style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
-style='font-family:Consolas;color:#F8F8F2'>    </span></code></pre>
-
-<p class=MsoNormal style='background:white;vertical-align:baseline'>&nbsp;</p>
-
-<p class=MsoNormal style='background:white;vertical-align:baseline'>We can do a
-lot more with arrays. Check out MDN for more info on arrays:</p>
-
-<p class=MsoNormal style='background:white;vertical-align:baseline'><span
-style='color:#3E3F47'><a
-href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array</a></span></p>
-
-<p class=MsoNormal style='background:white;vertical-align:baseline'><span
-style='font-size:21.5pt;line-height:107%;font-family:"Arial",sans-serif;
-color:#3E3F47'>&nbsp;</span></p>
+<p class=MsoListParagraphCxSpLast>All other values are truthy, including
+&quot;0&quot; (zero in quotes), &quot;false&quot; (false in quotes), empty
+functions, empty arrays, and empty objects.</p>
 
 <b><span style='font-size:16.0pt;line-height:107%;font-family:"Calibri Light",sans-serif'><br
 clear=all style='page-break-before:always'>
@@ -1402,77 +691,33 @@ clear=all style='page-break-before:always'>
 
 <h1><span style='color:#2F5496'>Assignment</span></h1>
 
-<p class=MsoListParagraphCxSpFirst style='margin-left:0in'>&nbsp;</p>
+<p class=MsoListParagraphCxSpFirst style='margin-left:0in;background:white'>&nbsp;</p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-size:10.0pt;line-height:107%;font-family:Symbol'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Use Example Template 1 from the class GitHub account under Day 4
-here: </p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:0in;background:white'>Write
+a function that takes a string as an argument (input), capitalizes only the
+first letter, and returns the updated string. For example, if I pass the string
+“corey” into the function, it will return “Corey”. You should be able to test
+is like this:</p>
 
-<p class=MsoListParagraphCxSpMiddle><a
-href="https://github.com/coreyshuman/Geekwise-JavaScript-I/tree/master/Day%204/Example%20Template%201">https://github.com/coreyshuman/Geekwise-JavaScript-I/tree/master/Day%204/Example%20Template%201</a></p>
+<p class=MsoListParagraphCxSpLast style='margin-left:0in;background:white'>&nbsp;</p>
 
-<p class=MsoListParagraphCxSpMiddle style='margin-left:.75in'>&nbsp;</p>
+<pre style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
+style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>&nbsp;</span></code></pre><pre
+style='line-height:12.0pt;background:#272822;vertical-align:baseline'><span
+class=token><span style='font-size:12.0pt;font-family:Consolas;color:#66D9EF'>var</span></span><code><span
+style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'> name = </span></code><span
+class=token><span style='font-size:12.0pt;font-family:Consolas;color:#A6E22E'>&quot;corey&quot;</span></span><span
+class=token><span style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>;</span></span></pre><pre
+style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
+style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>name = capitalize(name);</span></code></pre><pre
+style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
+style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>console.log(name); </span></code><span
+class=token><span style='font-size:12.0pt;font-family:Consolas;color:slategray'>// Corey</span></span></pre><pre
+style='line-height:12.0pt;background:#272822;vertical-align:baseline'><code><span
+style='font-size:12.0pt;font-family:Consolas;color:#F8F8F2'>&nbsp;</span></code></pre>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-size:10.0pt;line-height:107%;font-family:Symbol'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Create an empty array at the top of the file (right after the
-intro comment)</p>
-
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-size:10.0pt;line-height:107%;font-family:Symbol'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Create a function that takes the text from Input 1 and pushes it
-into the array</p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
-style='font-size:10.0pt;line-height:107%;font-family:Symbol'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Use the function <span style='color:#FF5050'>domInput1()</span>
-to do this</p>
-
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-size:10.0pt;line-height:107%;font-family:Symbol'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>When the user clicks the “Go!” button, call your function you
-created that adds the Input 1 text to your array. Do this by calling your
-function inside <span style='color:#FF5050'>handleGoButtonClick().</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
-style='font-size:10.0pt;line-height:107%;font-family:Symbol'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span> You should also clear the contents of Input 1 by calling <span
-style='color:#FF5050'>domInput1(</span><span class=token><span
-style='color:#FF5050'>&quot;&quot;</span></span><span style='color:#FF5050'>);</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-size:10.0pt;line-height:107%;font-family:Symbol'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Print the contents of you array to the Text Output window using <span
-style='color:#FF5050'>domTextOutput(text);</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-size:10.0pt;line-height:107%;font-family:Symbol'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>To print an array as a string, call the <span style='color:#FF5050'>.toString()</span>
-function on the array.</p>
-
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-size:10.0pt;line-height:107%;font-family:Symbol'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>BONUS: If you get the above to work, add a function to your
-script that will add the contents of Input 2 to the BEGINNING of the array</p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
-style='font-size:10.0pt;line-height:107%;font-family:Symbol'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>How could this be accomplished? Hint, think about using
-slice/splice and multiple arrays, OR, do some internet research. A function
-exists to do this for you that we haven’t covered here.</p>
-
-<p class=MsoListParagraphCxSpLast style='margin-left:0in'>&nbsp;</p>
+<p class=MsoListParagraph style='margin-left:0in;background:white'><span
+style='font-size:10.0pt;line-height:107%'>&nbsp;</span></p>
 
 </div>
 
