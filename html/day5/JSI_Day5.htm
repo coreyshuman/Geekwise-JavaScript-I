@@ -19,11 +19,11 @@
 	{font-family:Calibri;
 	panose-1:2 15 5 2 2 2 4 3 2 4;}
 @font-face
-	{font-family:Consolas;
-	panose-1:2 11 6 9 2 2 4 3 2 4;}
-@font-face
 	{font-family:inherit;
 	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
  /* Style Definitions */
  p.MsoNormal, li.MsoNormal, div.MsoNormal
 	{margin-top:0in;
@@ -1167,10 +1167,10 @@ color:#0073EA'>In JavaScript<span class=apple-converted-space>&nbsp;</span><stro
 style='font-family:"inherit",serif'>strings</span></strong><span
 class=apple-converted-space>&nbsp;</span>are<span class=apple-converted-space>&nbsp;</span><strong><span
 style='font-family:"inherit",serif'>not mutable</span></strong>. This means
-that when you take any action on a string, you're actually creating a new
-string. So it's important to realize that since I can't actually change the
-string &quot;adam&quot; into &quot;Adam&quot;, we can fake it by creating
-another string.</span></p>
+that when you take any action on a string, you're actually creating a new string.
+So it's important to realize that since I can't actually change the string
+&quot;adam&quot; into &quot;Adam&quot;, we can fake it by creating another
+string.</span></p>
 
 <pre style='background:white;vertical-align:baseline'><span style='font-size:
 13.5pt;font-family:Consolas;color:#F8F8F2'>&nbsp;</span></pre><pre
@@ -1207,12 +1207,12 @@ style='font-family:Consolas;color:#F8F8F2'>    </span></code></pre>
 line-height:107%;font-family:"Calibri",sans-serif;color:#3B3838'>Handling Edge
 Cases</span></h3>
 
-<p class=MsoNormal style='background:white;vertical-align:baseline'>When
-writing functions (or any JS program, really), it's very important to consider
-edge cases. As a developer, it's your job to anticipate odd ways your function
-might be used and make sure it handles those cases. What happens if you call
-your capitalize function on an empty string? How can we fix that? What other
-edge cases might be useful to consider?</p>
+<p class=MsoNormal style='background:white;vertical-align:baseline'>When writing
+functions (or any JS program, really), it's very important to consider edge
+cases. As a developer, it's your job to anticipate odd ways your function might
+be used and make sure it handles those cases. What happens if you call your
+capitalize function on an empty string? How can we fix that? What other edge
+cases might be useful to consider?</p>
 
 <pre style='background:#272822;vertical-align:baseline'><span style='font-size:
 13.5pt;font-family:Consolas;color:#F8F8F2'>    </span></pre><pre
@@ -1470,77 +1470,9 @@ style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New
 clear=all style='page-break-before:always'>
 </span></b>
 
-<h1><span style='color:#2F5496'>Assignment</span></h1>
+<h1>&nbsp;</h1>
 
-<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span
-style='font-size:10.0pt;line-height:107%;font-family:Symbol'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Use Assignment Template from the class GitHub account under Day 5
-here: </p>
-
-<p class=MsoListParagraphCxSpMiddle><a
-href="https://github.com/coreyshuman/Geekwise-JavaScript-I/tree/master/Day%204/Assignment%20Template">https://github.com/coreyshuman/Geekwise-JavaScript-I/tree/master/Day%204/Assignment%20Template</a></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:.75in'>&nbsp;</p>
-
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-size:10.0pt;line-height:107%;font-family:Symbol'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Create an empty array at the top of the file (right after the
-intro comment)</p>
-
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-size:10.0pt;line-height:107%;font-family:Symbol'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Create a function that takes the text from Input 1 and pushes it
-into the array</p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
-style='font-size:10.0pt;line-height:107%;font-family:Symbol'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Use the function <span style='color:#FF5050'>domInput1()</span>
-to do this</p>
-
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-size:10.0pt;line-height:107%;font-family:Symbol'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>When the user clicks the “Go!” button, call your function you
-created that adds the Input 1 text to your array. Do this by calling your
-function inside <span style='color:#FF5050'>handleGoButtonClick().</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
-style='font-size:10.0pt;line-height:107%;font-family:Symbol'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span> You should also clear the contents of Input 1 by calling <span
-style='color:#FF5050'>domInput1(</span><span class=token><span
-style='color:#FF5050'>&quot;&quot;</span></span><span style='color:#FF5050'>);</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-size:10.0pt;line-height:107%;font-family:Symbol'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Print the contents of you array to the Text Output window using <span
-style='color:#FF5050'>domTextOutput(text);</span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-size:10.0pt;line-height:107%;font-family:Symbol'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>To print an array as a string, call the <span style='color:#FF5050'>.toString()</span>
-function on the array.</p>
-
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-size:10.0pt;line-height:107%;font-family:Symbol'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>BONUS: If you get the above to work, add a function to your
-script that will add the contents of Input 2 to the BEGINNING of the array</p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-.25in'><span
-style='font-size:10.0pt;line-height:107%;font-family:Symbol'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>How could this be accomplished? Hint, think about using
-slice/splice and multiple arrays, OR, do some internet research. A function
-exists to do this for you that we haven’t covered here.</p>
-
-<p class=MsoListParagraphCxSpLast style='margin-left:0in'>&nbsp;</p>
+<p class=MsoListParagraph style='margin-left:0in'>&nbsp;</p>
 
 </div>
 
