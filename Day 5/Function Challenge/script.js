@@ -36,8 +36,28 @@ function flipString(str) {
 	return str.substring(str.length/2, str.length) + str.substring(0, str.length/2);
 }
 
+function flipString2(str) {
+	var result;
+	if (!str || typeof str !== "string") {
+        return "";
+    }
+	
+	if(str.length == 1)
+	{
+		return str;
+	}
+	else if(str.length % 2 === 1) {
+		result = str.substring(Math.ceil(str.length/2), str.length) + str.charAt(Math.floor(str.length/2)) + str.substring(0, Math.floor(str.length/2));
+	// even
+	} else {
+		result = str.substring(str.length/2, str.length) + str.substring(0, str.length/2);
+	}
+
+	return result;
+}
+
 function averageOf4Numbers(numbers) {
-	if (!numbers || typeof numbers !== "object" || numbers.length !== 4) {
+	if (!numbers || Array.isArray(numbers) || numbers.length !== 4) {
         return NaN;
     }
 	
