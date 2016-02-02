@@ -24,16 +24,16 @@ function printListToTextOutput()
 	//domTextOutput(todoArray.join(", "));
 	// modified to use a loop to print
 	var outputStr = "";
-	/*
+	
 	for(var i=0; i<todoArray.length; i++) {
 		outputStr += todoArray[i];
 		if(i<todoArray.length-1) {
 			outputStr += ", ";
 		}
 	}
-	*/
-	// alternate output option - numbered list
 	
+	// alternate output option - numbered list
+	/*
 	for(var i=0; i<todoArray.length; i++) {
 		outputStr += (i+1) + ") ";
 		outputStr += todoArray[i];
@@ -41,7 +41,7 @@ function printListToTextOutput()
 			outputStr += "<br />";
 		}
 	}
-	
+	*/
 	domTextOutput(outputStr);
 }
 
