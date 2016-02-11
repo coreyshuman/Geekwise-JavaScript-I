@@ -21,9 +21,10 @@ function addItem1ToList()
 
 function printListToTextOutput()
 {
-	//domTextOutput(todoArray.join(", "));
-	// modified to use a loop to print
 	var outputStr = "";
+	//outputStr = todoArray.join(", ");
+	// modified to use a loop to print
+	
 	
 	for(var i=0; i<todoArray.length; i++) {
 		outputStr += todoArray[i];

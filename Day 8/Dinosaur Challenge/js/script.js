@@ -8,8 +8,8 @@ var dinoArray = [];
 
 function dinosaur(type, era, food) {
 	// create array from data passed in
-	var dinoArray = [type, era, food];
-	return dinoArray;
+	var a = [type, era, food];
+	return a;
 }
 
 function runDino() {
