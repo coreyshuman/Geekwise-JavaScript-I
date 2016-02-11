@@ -42,3 +42,33 @@ function printPyramid(cnt) {
 document.getElementById("myBtnUp").onclick = myClickUpHandler;
 document.getElementById("myBtnDown").onclick = myClickDownHandler;
 document.getElementById("myBtnReset").onclick = myClickResetHandler;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function printPyramid(cnt) {
+	var outputStr = "";
+	for(var j=0; j<cnt; j++) {
+		outputStr += "<p>";
+		for(var k=0; k<=j ; k++) {
+			outputStr += "#";
+		}
+		outputStr += "</p>";
+	}
+	// print to the page
+	document.getElementById("myPyramid").innerHTML = outputStr;
+}
