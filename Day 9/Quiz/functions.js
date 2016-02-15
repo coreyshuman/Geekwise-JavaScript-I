@@ -1,3 +1,5 @@
+
+
 function num2arr(num1, num2) {
 	return [num1+num2, num1*num2];
 }
@@ -49,6 +51,7 @@ function str2arr(str) {
 }
 	
 function sort(arr) {
+	var done;
 	n = arr.length;
 	for(var j = 0; j < n; j++) {
 		done = true;
