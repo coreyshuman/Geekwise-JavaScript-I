@@ -8,6 +8,8 @@
  
  var listArray = [];
  var itemId = 1;
+ var editing = false;
+ var curItem = null;
  
  $(function() {
 	var newItemButton = document.getElementById("NewItemButton");
@@ -115,7 +117,24 @@
 					printList();
 					break;
 			}
+		} else if(target.hasAttribute("rel")) {
+			selectItem(target);
+			
 		}
+	}
+	
+	function selectItem(ref) {
+		clearSelect();
+		ref.setAttribute("class", "selectLite");
+		curItem = ref;
+	}
+	
+	function clearSelect() {
+		var items = document.querySelectorAll("ol li a");
+		for(var i = 0; i < items.length; i++) {
+			items[i].removeAttribute("class");
+		}
+		curItem = null;
 	}
 	
 	function printList() {
@@ -129,9 +148,11 @@
 	function showEditWindow(show) {
 		var wnd = document.getElementById("EditWindowDiv");
 		if(show) {
+			editing = true;
 			wnd.style.display = "block";
 			itemInput.focus();
 		} else {
+			editing = false;
 			wnd.style.display = "none";
 		}
 	}
@@ -169,13 +190,46 @@
 	// handle enter and escape keys
 	document.onkeydown = function keyCheck(e) {	
 		var KeyID = (window.event) ? event.keyCode : e.keyCode;
-		
+		console.log(KeyID)
 		switch(KeyID) {
 			case 13: // [enter]
 				handleEditClick();
 				break;
 			case 27: // [esc]
 				showEditWindow(false);
+				clearSelect();
+				break;
+			case 78: // new (n)
+				if(!editing) {
+					showEditWindow(true);
+					e.preventDefault()
+				}
+				break;
+			case 69: // edit (e)
+				if(!editing && curItem !== null) {
+					var itemId = curItem.getAttribute("rel");
+					itemId = parseInt(itemId);
+					setupEditAction(itemId);
+					e.preventDefault();
+				}
+				break;
+			case 68: // delete (d)
+				if(!editing && curItem !== null) {
+					var itemId = curItem.getAttribute("rel");
+					itemId = parseInt(itemId);
+					if(confirm("Are you sure you want to delete?")) {
+						deleteItem(itemId);
+						printList();
+					}
+				}
+				break;
+			case 70: // mark (f)
+				if(!editing && curItem !== null) {
+					var itemId = curItem.getAttribute("rel");
+					itemId = parseInt(itemId);
+					markItem(itemId);
+					printList();
+				}
 				break;
 		}
 		

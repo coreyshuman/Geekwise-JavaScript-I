@@ -88,3 +88,7 @@ ol ol {
 a:hover .ListControls {
 	opacity: 1;
 }
+
+.selectLite {
+	border: solid .15em aqua;
+}
