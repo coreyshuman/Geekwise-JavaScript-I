@@ -1,22 +1,20 @@
-/* JavaScript Test Code Template
+/* JavaScript Rock Paper Scissors Game
    Corey Shuman
-   11/4/15
+   3/14/16
    
-   This files contains some shortcut functions
-   to manipulate the values for two input textboxes.
-   It also sets up an event handler to handle
-   button clicks on the page.
 */
 
-// USER CODE - Put your code here!
+// create global variables to store game and win count
 var gameCount = 0;
 var winCount = 0;
 
 // This function is called every time the button is clicked
 function handleGoButtonClick(event) {
+	// get user value that they typed into input 1
 	var user = domInput1().toLowerCase();
 	var computer;
 	var result;
+	// use a random number to pick what the computer plays
 	switch(Math.ceil(Math.random()*3)) {
 		case 1:
 			computer = 'rock';
@@ -29,13 +27,17 @@ function handleGoButtonClick(event) {
 			break;
 	}
 
+	// clear the input box
 	domInput1("");
+	// validate the user input
 	if(user !== 'rock' && user !== 'paper' && user !== 'scissors') {
 		result = "Invalid Input";
 		domTextOutput(result);
 		return;
 	}
 	
+	// game logic
+	// string stored in 'result' will be sent to page
 	result = "You choose " + user;
 	result += "<br>Computer chooses " + computer + "<br>";
 	gameCount++;
@@ -60,6 +62,7 @@ function handleGoButtonClick(event) {
 	
 	result += "<br> You have played " + gameCount + " games.";
 	result += "<br> You have won " + winCount + " games.";
+	// output text to the page
 	domTextOutput(result);
 }
 
