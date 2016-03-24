@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>JS1 Movie List App</title>
+		
+	</head>
+	<body>
+		<h1>Movie List App</h1>
+		
+		<form name="newMovieForm" id="newMovieForm">
+			<label for="movieTitle">Movie Title</label>
+            <input type="text" name="movieTitle" id="movieTitle" />
+			<label for="movieRelease">Release Date</label>
+			<input type="text" name="movieRelease" id="movieRelease" />
+			<div id="genre">
+				<input type="radio" name="genre" value="comedy" checked /> comedy<br />
+				<input type="radio" name="genre" value="drama" /> drama<br />
+				<input type="radio" name="genre" value="horror" /> horror<br />
+				<input type="radio" name="genre" value="sci-fi" /> sci-fi<br />
+				<input type="radio" name="genre" value="action" /> action<br />
+			</div>
+            <input type="submit" value="Add Movie" />
+        </form>
+		
+		<h1 id="myHdr">Movie List</h1>
+		<div id="movieListDiv"></div>
+		
+		<!-- Include JavaScript files at the end of the HTML file to improve page loading times -->
+		<script type="text/javascript" src="app.js"></script>
+	</body>
+</html>
